@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cloud CI/CD Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <header>
+    <h1>My Cloud CI/CD Website</h1>
+    <p class="header-sub">
+      <span>Faisal Rami Faisal Al-Zeer</span> &nbsp;·&nbsp; Course: <span>Cloud Computing</span>
+    </p>
+  </header>
+
+  <div class="divider"></div>
+
+  <div class="toggle-wrap">
+    <button id="themeBtn" onclick="toggleTheme()">Dark mode 🌙</button>
+  </div>
+
+  <div class="card">
+    <h2>What is CI/CD?</h2>
+    <p>
+        CI/CD stands for Continuous Integration and Continuous Deployment, and it is a modern approach to software development.
+        This concept allows automating the process of checking, building, and deploying code automatically.
+        When a developer pushes code to the repository, a series of processes run to verify the project and prepare it for deployment.
+        This approach helps reduce errors and speeds up the development process and the delivery of updates.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>My Pipeline</h2>
+    <p>
+        When I push the code to the main branch on GitHub, GitHub Actions runs automatically.
+        The workflow checks the required files and then deploys the website to GitHub Pages.
+        After the process finishes successfully, the website is updated directly online.
+    </p>
+  </div>
+
+</div>
+
+<footer>Cloud Computing — CI/CD Project — 2025</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
