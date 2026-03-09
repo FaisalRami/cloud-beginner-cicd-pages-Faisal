@@ -219,3 +219,33 @@ h1 {
         opacity: 1; 
     }
 }
+
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #2563eb;
+  background: #fff;
+  color: #2563eb;
+  font-size: 1.3rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  transform: translateY(-3px);
+}
+
+#scrollTopBtn.show {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
